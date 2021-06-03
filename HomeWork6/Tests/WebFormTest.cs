@@ -27,7 +27,7 @@ namespace HomeWork6.Tests
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
             wait.Until(ExpectedConditions.ElementIsVisible(By.Id("example-modal-sizes-title-lg")));
             Assert.IsTrue(Driver.FindElement(By.Id("example-modal-sizes-title-lg")).Displayed);
-            Logger.Debug(webForm);
+
         }
     }
 }
